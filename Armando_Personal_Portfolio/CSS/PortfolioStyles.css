@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Rubik';
+    src: url('../Fonts/rubik-regular-webfont.woff') format('woff');
+    src: url('../Fonts/rubik-regular-webfont.woff2') format('woff2');
+}
+
+html {
+    background-image: url('../Image/Alpine.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+main {
+    background-color: #8f8f8fad;
+    text-align: center;
+}
+body {
+margin: 0 10%;
+font-family: sans-serif;
+}
+h1 {
+font-family: serif;
+font-weight: normal;
+text-transform: uppercase;
+margin-top: 30px;
+}
+h2 {
+background-color: rgb(41, 83, 41);
+color: white;
+font-family: serif;
+font-weight: normal;
+}
+h3 {
+    font-family: 'Rubik';
+    font-size: 1.5em;
+}
+.box {
+    text-align: center;
+    font-family: serif;
+    font-weight: normal;
+}
+nav {
+	display: table;
+	width: 100%;
+    padding-bottom: 20px;
+}
+
+nav > ul {
+	display: table-row;
+}
+
+nav > ul > li {
+    background-color: #8f8f8f;
+	display: table-cell;
+    text-align: center;
+}
+
+nav > ul > li > a {
+	display: block;
+}
+
+p {
+    background-color: #8f8f8f;
+    padding: 1em;
+}
+
+nav a:hover, nav a:active {
+	color: hsl(0, 0%, 100%, 0.7);
+	background-color: hsl(0, 0%, 42%, 0.7);
+}
+footer {
+    width: 20%;
+    margin-left: 40%;
+}
+form {
+    text-align: center;
+}
+table {
+    background-color: #8f8f8f;
+    width: 80%;
+    margin-left: 10%;
+    border: .5px solid black;
+}
+td, caption {
+    border: .5px solid black;
+    text-align: center;
+}
+caption {
+    background-color: #8f8f8f;
+    width: 20%;
+    margin-left: 40%;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+tfoot {
+    text-align: center;
+}
+.projectTableColor {
+    background-color: cadetblue;
+}
+.projects tr td{
+    display: block;
+    width: 33%;
+}
+tr td a {
+    color: black;
+    font-style: normal;   
+}
+label {
+    background-color: #8f8f8f;
+}
+div {
+    text-align: center;
+}
