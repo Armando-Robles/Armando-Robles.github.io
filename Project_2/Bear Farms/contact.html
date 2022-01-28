@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author: Armando Robles                                      #
+#Date Created: 1/25/2022                                        #
+#Version:1.0                                                  #
+#Date Last Modified:1/28/2022                                #
+#Modified by:Armando Robles                                           #
+#Modification log:                                    #
+ - 1/19/2022: Created html and added contat us forms. Editted JS so user would get an alert box instead of taking them to a new page-
+------------------------------------------------------------------------------------------------------------------>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bear Farms: Contact</title>
+    <link rel="icon" type="image/x-icon" href="../Bear Farms/images/farmdesign.png">
+    <link rel="stylesheet" href="bearFarms.css">
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="../Bear Farms/images/bblogodesign.png" alt="Bear Farms Logo">
+        <nav>
+            <ul>
+                <li><a href="..//Bear Farms/home.html" target="_blank">Home</a></li>
+                <li><a href="..//Bear Farms/vineyard.html" target="_blank">Vineyard</a></li>
+                <li><a href="..//Bear Farms/crops.html" target="_blank">Crops</a></li>
+                <li><a href="..//Bear Farms/venue.html" target="_blank">Venue</a></li>
+                <li><a href="..//Bear Farms/faq.html" target="_blank">FAQS</a></li>
+                <li><a href="..//Bear Farms/contact.html" target="_blank">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Register for an Account</h1>
+        <form  method="get">
+            <div>
+                <label for="email_address">E-Mail:</label>
+                <input type="text" name="email_address" id="email_address">
+                <span>*</span>
+            </div>
+            <div>
+                <label for="phone">Mobile Phone:</label>
+                <input type="text" name="phone" id="phone">
+                <span>*</span>
+            </div>
+            <div>
+                <label for="comment">Comment:</label>
+                <input type="text" name="comment" id="comment">
+                <span>*</span>
+            </div>
+            <div>
+                <label for="country">Country:</label>
+                <select name="country" id="country">
+                    <option value="">Select a country</option>
+                    <option>USA</option>
+                    <option>Canada</option>
+                    <option>Mexico</option>
+                </select>
+                <span>*</span>
+            </div>
+            <div>
+                <label>Contact me by:</label>
+                <input type="radio" name="contact" id="mobile" value="mobile" checked>Mobile
+                <input type="radio" name="contact" id="text" value="text" >Text
+                <input type="radio" name="contact" id="email" value="email">Email
+                <input type="radio" name="contact" id="none" value="none">Don't contact me
+            </div>
+            <div>
+                <label>Terms of Service:</label>
+                <input type="checkbox" name="terms" id="terms" value="yes">I accept
+                <span>*</span>
+            </div>
+            <div>
+                <label>&nbsp;</label>
+                <input type="button" id="register" value="Register">
+                <input type="button" id="reset_form" value="Reset">
+            </div>
+
+        </form>
+    </main>
+    <footer>
+    </footer>
+</body>
+<script src="../Bear Farms/bearFarms.js"></script>
+
+</html>

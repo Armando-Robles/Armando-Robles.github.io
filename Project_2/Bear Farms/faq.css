@@ -1,0 +1,136 @@
+/*********************************************************************
+***
+*Original Author: Armando Robles                                   *
+*Date Created: 1/28/2022                                      *
+*Version:1.00                                                *
+*Date Last Modified:1/28/2022                              *
+*Modified by:  Armando Robles                                        *
+*Modification log:                                  *
+*1/28/2022: Created this css so the bearFarms.css doesnt mess with faq.html or vice versa*
+******************************************************************** */
+
+/* Tablet and Computer CSS */
+@media (min-width: 621px) {
+    #logo {
+     width: 45%;
+    }
+    #windowFarm {
+     width: 60%;
+    }
+    }
+    
+    /* Mobile CSS */
+    @media (max-width: 620px) {
+    #logo {
+    width: 100%;
+    }
+    #windowFarm {
+    width: 100%;
+    }
+    }
+    
+    body {
+        background-color: #64a020b7;
+    }
+    header, main {
+        text-align: center;
+        align-items: center;
+    }
+
+    
+    h1 { 
+        font-size: 150%;
+    }
+    h2 {
+        font-size: 120%;
+        padding: .25em 0 .25em 25px;
+        cursor: pointer;
+        background: url(images/plus.png) no-repeat left center;
+    }
+    h2.minus {
+        background: url(images/minus.png) no-repeat left center;
+    }
+    a {
+        color: black;
+        text-decoration: none; 
+    }
+    a:focus, a:hover { 
+        color: blue; 
+    }
+    div {
+        display: none;
+    }
+    div.open {
+        display: block;
+    }
+    ul {
+        padding-left: 45px;
+    }
+    li {
+        padding-bottom: .25em;
+    }
+    p {
+        padding-bottom: .25em;
+        padding-left: 25px;
+    }
+    ul.nav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgba(51, 51, 51, 0.438);
+      }
+      
+      li.nav {
+        float: left;
+      }
+      
+      li.nav a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 1.75em;
+        font-weight: bold;
+      }
+      
+      li.nav a:hover {
+        background-color: rgba(17, 17, 17, 0.315);
+      }
+    
+      .button {
+        position: relative;
+        background-color: #4CAF50;
+        border: none;
+        font-size: 28px;
+        color: #FFFFFF;
+        padding: 20px;
+        width: 200px;
+        text-align: center;
+        transition-duration: 0.4s;
+        text-decoration: none;
+        overflow: hidden;
+        cursor: pointer;
+      }
+      
+      .button:after {
+        content: "";
+        background: #f1f1f1;
+        display: block;
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -20px !important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all 0.8s
+      }
+      
+      .button:active:after {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: 0s
+      }
+    
