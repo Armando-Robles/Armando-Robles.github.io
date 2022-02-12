@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author: Armando Robles                                      #
+#Date Created: 1/19/2022                                        #
+#Version:1.0                                                  #
+#Date Last Modified:1/28/2022                                #
+#Modified by:Armando Robles                                           #
+#Modification log:                                    #
+ - 1/19/2022: Made document and linked the necessary documents -
+ - 1/21/2022: Added Favicon -
+ - 1/25/2022: Added a little bit of dialog, but most importantly a Join Newsletter input! It even validaes the information to a degree
+------------------------------------------------------------------------------------------------------------------>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bear Farms: Home</title>
+    <link rel="icon" type="image/x-icon" href="../Bear Farms/images/farmdesign.png">
+    <link rel="stylesheet" href="../Bear Farms/css/bearFarms.css">
+    <link rel="stylesheet" href="../Bear Farms/css/venue.css">
+    <link rel="stylesheet" href="../Bear Farms/css/crops.css">
+</head>
+
+<body>
+    <script src="../Bear Farms/bearFarms.js"></script>
+    <header>
+        <img id="logo" src="../Bear Farms/images/bblogodesign.png" alt="Bear Farms Logo">
+        <nav>
+            <ul>
+                <li><a href="..//Bear Farms/home.html" target="_blank">Home</a></li>
+                <li><a href="..//Bear Farms/vineyard.html" target="_blank">Vineyard</a></li>
+                <li><a href="..//Bear Farms/crops.html" target="_blank">Crops</a></li>
+                <li><a href="..//Bear Farms/venue.html" target="_blank">Venue</a></li>
+                <li><a href="..//Bear Farms/faq.html" target="_blank">FAQS</a></li>
+                <li><a href="..//Bear Farms/contact.html" target="_blank">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="slideShow">
+            <h1>Past Wedding Decorations</h1>
+            <p>On November 10th, 2021, We held our largest wedding to date! The happy couple requested an
+                outdoor/barn/forest theme. We did our best and delivered all of them!</p>
+            <div class="cycle-slideshow" data-cycle-fx="fadeout" data-cycle-timeout="2000" data-cycle-speed="1000"
+                data-cycle-caption="#adv-custom-caption" data-cycle-caption-template="{{cycleTitle}}">
+                <img src="images/venue/venue-1.jpg" alt="" data-cycle-title="Our lovely seating">
+                <img src="images/venue/venue-2.jpg" alt="" data-cycle-title="Groom Pinecone Placement">
+                <img src="images/venue/venue-3.jpg" alt="" data-cycle-title="Bride Pinecone Placement">
+                <img src="images/venue/venue-4.jpg" alt="" data-cycle-title="Forest Inclosure">
+                <img src="images/venue/venue-5.jpg" alt="" data-cycle-title="Barn Ballroom">
+                <!-- empty element for caption -->
+                <div id="adv-custom-caption"></div>
+            </div>
+        </section>
+        <section>
+            <h1>To-Do List</h1>
+            <p>We understand that planning a wedding can be hard. So we made this list form 
+                so you can see what and when you need to get your planning done!
+            </p>
+            <div id="tasks">
+                <label for="task_list">Task List</label><br>
+                <textarea id="task_list" rows="6" cols="50"></textarea>
+            </div>
+            <div>
+                <label for="task">Task:</label><br>
+                <input type="text" name="task" id="task">
+            </div>
+            <div>
+                <label for="due_date">Due Date:</label><br>
+                <input type="text" name="due_date" id="due_date">
+            </div>
+            <div>
+                <input type="button" id="add_task" value="Add Task"><br>
+                <input type="button" id="clear_tasks" value="Clear Tasks"><br>
+                <input type="button" id="filter" value="Filter">
+            </div>
+        </section>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+        <script src="../Bear Farms/BFjs/To-doList.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="js/jquery.cycle2.min.js"></script>
+    </main>
+    <footer>
+        <div>
+            <div>
+                <div>Copyright &copy; Bear Farms 2022</div>
+                <div>
+                    <p><a href="mailto:blahblah@blah.com">bearfarms@gmail.com</a><br/>
+                       <a href="tel:+12345678910">1-234-567-8910</a></p>
+                </div>
+                <div>
+                    <a href="#!">Privacy Policy</a>
+                    <a href="#!">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

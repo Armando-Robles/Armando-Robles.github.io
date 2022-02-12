@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author: Armando Robles                                      #
+#Date Created: 1/28/2022                                        #
+#Version:1.0                                                  #
+#Date Last Modified:1/28/2022                                #
+#Modified by:Armando Robles                                           #
+#Modification log:                                    #
+ - 1/28/2022: Created html and attempted to add a slideshow-
+------------------------------------------------------------------------------------------------------------------>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bear Farms: Vineyard</title>
+    <link rel="icon" type="image/x-icon" href="../Bear Farms/images/farmdesign.png">
+    <link rel="stylesheet" href="../Bear Farms/css/bearFarms.css">
+    <link rel="stylesheet" href="../Bear Farms/css/venue.css">
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="../Bear Farms/images/bblogodesign.png" alt="Bear Farms Logo">
+        <nav>
+            <ul class="nav">
+                <li class="nav"><a href="..//Bear Farms/home.html" target="_blank">Home</a></li>
+                <li class="nav"><a href="..//Bear Farms/vineyard.html" target="_blank">Vineyard</a></li>
+                <li class="nav"><a href="..//Bear Farms/crops.html" target="_blank">Crops</a></li>
+                <li class="nav"><a href="..//Bear Farms/venue.html" target="_blank">Venue</a></li>
+                <li class="nav"><a href="..//Bear Farms/faq.html" target="_blank">FAQS</a></li>
+                <li class="nav"><a href="..//Bear Farms/contact.html" target="_blank">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>The Vineyard Guardians</h1>
+            <p>These brave, aggresive chickens eat all bugs that could harm our precious grapes.</p>
+            <div class="cycle-slideshow"
+                data-cycle-fx="fadeout"
+                data-cycle-timeout="2000"
+                data-cycle-speed="1000"
+                data-cycle-caption="#adv-custom-caption"
+                data-cycle-caption-template="{{cycleTitle}}" >
+                <img src="images\farm_pictures\Chicken1.jpg" alt="" data-cycle-title="Wild pack">
+                <img src="images\farm_pictures\Chicken2.jpg" alt="" data-cycle-title="Defenders of grapes">
+                <!-- empty element for caption -->
+                <div id="adv-custom-caption"></div>
+            </div>      
+        </section>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="js/jquery.cycle2.min.js"></script>
+    </main>
+    <footer>
+        <div>
+            <div>
+                <div>Copyright &copy; Bear Farms 2022</div>
+                <div>
+                    <p><a href="mailto:blahblah@blah.com">bearfarms@gmail.com</a><br/>
+                       <a href="tel:+12345678910">1-234-567-8910</a></p>
+                </div>
+                <div>
+                    <a href="#!">Privacy Policy</a>
+                    <a href="#!">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

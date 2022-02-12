@@ -1,0 +1,101 @@
+/*********************************************************************
+***
+*Original Author: Armando Robles                                   *
+*Date Created: 1/28/2022                                      *
+*Version:1.00                                                *
+*Date Last Modified:1/28/2022                              *
+*Modified by:  Armando Robles                                        *
+*Modification log:                                  *
+*1/28/2022: Created this css so the bearFarms.css doesnt mess with faq.html or vice versa*
+******************************************************************** */
+
+/* Tablet and Computer CSS */
+@media (min-width: 621px) {
+    #logo {
+     width: 45%;
+    }
+    #windowFarm {
+     width: 60%;
+    }
+    }
+    
+    /* Mobile CSS */
+    @media (max-width: 620px) {
+    #logo {
+    width: 100%;
+    }
+    #windowFarm {
+    width: 100%;
+    }
+    }
+    
+    body {
+        background-color: #64a020b7;
+    }
+    header, main {
+        text-align: center;
+        align-items: center;
+    }
+    ul {
+        padding-left: 45px;
+    }
+    li {
+        padding-bottom: .25em;
+    }
+    p {
+        padding-bottom: .25em;
+        padding-left: 25px;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    /* body {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 100%;
+      width: 650px;
+      margin: 0 auto;
+    } */
+    section {
+      padding: 15px 25px;
+    }
+    h1 { 
+      font-size: 150%;
+      margin-bottom: .5em;
+      text-align: center;
+    }
+    ul {
+      padding-left: 45px;
+    }
+    li {
+      padding-bottom: .25em;
+    }
+    /* Navbar css */
+    ul.nav {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgba(51, 51, 51, 0.438);
+      }
+      
+      li.nav {
+        float: left;
+      }
+      
+      li.nav a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 1.75em;
+        font-weight: bold;
+      }
+      
+      li.nav a:hover {
+        background-color: rgba(17, 17, 17, 0.315);
+      }
+      h3 {
+        background-color: #64a020b7;
+      }
