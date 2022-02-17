@@ -10,63 +10,95 @@
 *1/21/2022: Basic alert system informing the client that the website is incomplete.*
 *1/28/2022: Added JS for slide show (which isnt working yet), FAQs, Contact us and Newletter*
 ******************************************************************** */
-// const isDate = (date, datePattern, type) => {
-//     if (!datePattern.test(date)) { return false; }
+$(document).ready( () => {
 
-//     if (type == "full") {
-//         const dateParts = date.split("/");
-//         const month = parseInt( dateParts[0] );
-//         const day = parseInt( dateParts[1] );
-
-//         if ( month < 1 || month > 12 ) { return false; }
-//         if ( day > 31 ) { return false; }
-//         return true;
-//     }
-//     if (type == "cc") {
-//         const index = date.indexOf( "/" );
-//         const month = parseInt( date.substring( 0, index ) );
-
-//         if ( month < 1 || month > 12 ) { return false; }
-//         return true;
-//     } 
-// };
-
-$( document ).ready( () => {
-
-    $( "#save" ).click( () => {
-        $("span").text("");   // clear any previous error messages
-        
-        // get values entered by user
-        const email = $("#email").val();
-        const phone = $("#phone").val();
-        const zip = $("#zip").val();
-
-        // regular expressions for validity testing
-        const emailPattern = /^[\w\.\-]+@[\w\.\-]+\.[a-zA-Z]+$/;
-        const phonePattern = /^\d{3}-\d{3}-\d{4}$/;
-        const zipPattern = /^\d{5}(-\d{4})?$/;
-        
-        // check user entries for validity
+    // handle click on Join List button
+    $("#join_list").click( evt => {
         let isValid = true;
-        if ( email === "" || !emailPattern.test(email) ) {
+
+        // validate the first email address
+        const emailPattern = 
+            /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}\b/;
+        const email1 = $("#email_1").val().trim();
+        if (email1 == "") { 
+            $("#email_1").next().text("This field is required.");
             isValid = false;
-            $("#email").next().text("Please enter a valid email.");
-        }
-        if ( phone === "" || !phonePattern.test(phone) ) {
+        } else if ( !emailPattern.test(email1) ) {
+            $("#email_1").next().text("Must be a valid email address.");
             isValid = false;
-            $("#phone").next().text("Please enter a phone number in NNN-NNN-NNNN format.");
+        } else {
+            $("#email_1").next().text("");
         }
-        if ( zip === "" || !zipPattern.test(zip) ) {
+        $("#email_1").val(email1);
+
+        // validate the second email address
+        const email2 = $("#email_2").val().trim();
+        if (email2 == "") { 
+            $("#email_2").next().text("This field is required.");
+            isValid = false; 
+        } else if (email1 != email2) { 
+            $("#email_2").next().text("Must equal first email entry.");
             isValid = false;
-            $("#zip").next().text("Please enter a valid zip code.");
+        } else {
+            $("#email_2").next().text("");
         }
-        if ( isValid ) { 
-            // code that saves profile info goes here
+        $("#email_2").val(email2);
+        
+        // validate the first name entry  
+        const firstName = $("#first_name").val().trim();
+        if (firstName == "") {
+            $("#first_name").next().text("This field is required.");
+            isValid = false;
+        } else {
+            $("#first_name").next().text("");
         }
-        alert("Thank you for getting in touch with us! We will send you an email with all of our information!");
-        $("#email").focus(); 
+        $("#first_name").val(firstName);
+
+        // validate the last name entry
+        const lastName = $("#last_name").val().trim();
+        if (lastName == "") {
+            $("#last_name").next().text("This field is required.");
+            isValid = false;
+        } else {
+            $("#last_name").next().text("");
+        }
+        $("#last_name").val(lastName);
+
+        // validate the check boxes	
+        let checkedOptions = [];
+        checkedOptions = $(":checkbox:checked");
+        if (checkedOptions.length == 0) {
+            $("#venue").next().text("Select at least one.");
+            isValid = false;
+        } else {
+            $("#venue").next().text("");
+        }
+						
+		// prevent the default action of submitting the form if any entries are invalid 
+		if (isValid == false) {
+			evt.preventDefault();
+		}
+        if (isValid == true) {
+			alert("Thank you very much! We will get back to you ASAP!");
+            
+		}
     });
-    
-    // set focus on initial load
-    $("#email").focus();
+
+    // handle click on Reset Form button
+    $("#reset").click( () => {
+        // clear text boxes
+        $("#email_1").val("");
+        $("#email_2").val("");
+        $("#first_name").val("");
+
+        // reset span elements
+        $("#email_1").next().text("*");
+        $("#email_2").next().text("*");
+        $("#first_name").next().text("*");
+        
+        $("#email_1").focus();
+    });
+
+    // move focus to first text box
+    $("#first_name").focus();
 });

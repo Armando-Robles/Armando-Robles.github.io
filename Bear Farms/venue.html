@@ -16,25 +16,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bear Farms: Home</title>
+    <title>Bear Farms: Venue</title>
     <link rel="icon" type="image/x-icon" href="../Bear Farms/images/farmdesign.png">
     <link rel="stylesheet" href="../Bear Farms/css/bearFarms.css">
     <link rel="stylesheet" href="../Bear Farms/css/venue.css">
-    <link rel="stylesheet" href="../Bear Farms/css/crops.css">
 </head>
 
 <body>
     <script src="../Bear Farms/bearFarms.js"></script>
     <header>
         <img id="logo" src="../Bear Farms/images/bblogodesign.png" alt="Bear Farms Logo">
-        <nav>
-            <ul>
-                <li><a href="..//Bear Farms/home.html" target="_blank">Home</a></li>
-                <li><a href="..//Bear Farms/vineyard.html" target="_blank">Vineyard</a></li>
-                <li><a href="..//Bear Farms/crops.html" target="_blank">Crops</a></li>
-                <li><a href="..//Bear Farms/venue.html" target="_blank">Venue</a></li>
-                <li><a href="..//Bear Farms/faq.html" target="_blank">FAQS</a></li>
-                <li><a href="..//Bear Farms/contact.html" target="_blank">Contact</a></li>
+        <nav class="sticky">
+            <ul class="nav">
+                <li class="nav"><a href="..//Bear Farms/home.html">Home</a></li>
+                <li class="nav"><a href="..//Bear Farms/vineyard.html">Vineyard</a></li>
+                <li class="nav"><a href="..//Bear Farms/crops.html">Crops</a></li>
+                <li class="nav"><a href="..//Bear Farms/venue.html">Venue</a></li>
+                <li class="nav"><a href="..//Bear Farms/faq.html">FAQS</a></li>
+                <li class="nav"><a href="..//Bear Farms/contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -43,32 +42,61 @@
             <h1>Past Wedding Decorations</h1>
             <p>On November 10th, 2021, We held our largest wedding to date! The happy couple requested an
                 outdoor/barn/forest theme. We did our best and delivered all of them!</p>
-            <div class="cycle-slideshow" data-cycle-fx="fadeout" data-cycle-timeout="2000" data-cycle-speed="1000"
-                data-cycle-caption="#adv-custom-caption" data-cycle-caption-template="{{cycleTitle}}">
-                <img src="images/venue/venue-1.jpg" alt="" data-cycle-title="Our lovely seating">
-                <img src="images/venue/venue-2.jpg" alt="" data-cycle-title="Groom Pinecone Placement">
-                <img src="images/venue/venue-3.jpg" alt="" data-cycle-title="Bride Pinecone Placement">
-                <img src="images/venue/venue-4.jpg" alt="" data-cycle-title="Forest Inclosure">
-                <img src="images/venue/venue-5.jpg" alt="" data-cycle-title="Barn Ballroom">
-                <!-- empty element for caption -->
-                <div id="adv-custom-caption"></div>
-            </div>
+            <section>
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <img src="images/venue/venue-1.jpg" alt="Our lovely seating" style="width:100%">
+                        <div class="text">Our lovely seating</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/venue/venue-2.jpg" alt="Groom Pinecone Placement" style="width:100%">
+                        <div class="text">Groom Pinecone Placement</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/venue/venue-3.jpg" alt="Bride Pinecone Placement" style="width:100%">
+                        <div class="text">Bride Pinecone Placement</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/venue/venue-4.jpg" alt="Forest Enclosure" style="width:100%">
+                        <div class="text">Forest Enclosure</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/venue/venue-5.jpg" alt="Barn Ballroom" style="width:100%">
+                        <div class="text">Barn Ballroom</div>
+                    </div>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+            </section>
         </section>
-        <section>
+        <section class="to_do">
             <h1>To-Do List</h1>
-            <p>We understand that planning a wedding can be hard. So we made this list form 
-                so you can see what and when you need to get your planning done!
+            <p>We understand that planning a wedding can be hard.
             </p>
             <div id="tasks">
                 <label for="task_list">Task List</label><br>
-                <textarea id="task_list" rows="6" cols="50"></textarea>
+                <textarea id="task_list" rows="20" cols="75"></textarea>
             </div>
             <div>
                 <label for="task">Task:</label><br>
                 <input type="text" name="task" id="task">
             </div>
             <div>
-                <label for="due_date">Due Date:</label><br>
+                <label for="due_date">Schedule by:</label><br>
                 <input type="text" name="due_date" id="due_date">
             </div>
             <div>
@@ -77,24 +105,22 @@
                 <input type="button" id="filter" value="Filter">
             </div>
         </section>
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
         <script src="../Bear Farms/BFjs/To-doList.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="js/jquery.cycle2.min.js"></script>
     </main>
     <footer>
-        <div>
-            <div>
-                <div>Copyright &copy; Bear Farms 2022</div>
-                <div>
-                    <p><a href="mailto:blahblah@blah.com">bearfarms@gmail.com</a><br/>
-                       <a href="tel:+12345678910">1-234-567-8910</a></p>
-                </div>
-                <div>
-                    <a href="#!">Privacy Policy</a>
-                    <a href="#!">Terms of Use</a>
-                </div>
-            </div>
+        <div class="foot">Copyright &copy; Bear Farms 2022</div>
+        <div class="foot">
+            <a href="mailto:blahblah@blah.com">bearfarms@gmail.com</a><br>
+            <a href="tel:+12345678910">1-234-567-8910</a>
+        </div>
+        <div class="foot">
+            <a href="#!">Privacy Policy</a><br>
+            <a href="#!">Terms of Use</a>
         </div>
     </footer>
 </body>

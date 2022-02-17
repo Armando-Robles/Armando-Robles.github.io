@@ -22,42 +22,115 @@
 </head>
 
 <body>
-    
+
     <header>
         <img id="logo" src="../Bear Farms/images/bblogodesign.png" alt="Bear Farms Logo">
         <nav>
-            <ul>
-                <li><a href="..//Bear Farms/home.html" target="_blank">Home</a></li>
-                <li><a href="..//Bear Farms/vineyard.html" target="_blank">Vineyard</a></li>
-                <li><a href="..//Bear Farms/crops.html" target="_blank">Crops</a></li>
-                <li><a href="..//Bear Farms/venue.html" target="_blank">Venue</a></li>
-                <li><a href="..//Bear Farms/faq.html" target="_blank">FAQS</a></li>
-                <li><a href="..//Bear Farms/contact.html" target="_blank">Contact</a></li>
+            <ul class="nav">
+                <li class="nav"><a href="..//Bear Farms/home.html">Home</a></li>
+                <li class="nav"><a href="..//Bear Farms/vineyard.html">Vineyard</a></li>
+                <li class="nav"><a href="..//Bear Farms/crops.html">Crops</a></li>
+                <li class="nav"><a href="..//Bear Farms/venue.html">Venue</a></li>
+                <li class="nav"><a href="..//Bear Farms/faq.html">FAQS</a></li>
+                <li class="nav"><a href="..//Bear Farms/contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1 id="date">&nbsp;</h1>
-        <P>Our next harvest will be 06/13/2022! 
-            We will have corn, potatoes, carrots and tomatoes!
-            Supplies are limited so reserve your order today!
-        </P>
+        <section>
+            <h1 id="date">&nbsp;</h1>
+            <P>Our next harvest will be 06/13/2022!
+                We will have corn, potatoes, carrots and tomatoes!
+                Supplies are limited so reserve your order today!
+            </P>
+        </section>
+        <section class="crops" id="corn" id="slideShow">
+            <div class="cycle-slideshow" data-cycle-fx="fadeout" data-cycle-timeout="5000" data-cycle-speed="2000"
+                data-cycle-caption="#adv-custom-caption" data-cycle-caption-template="{{cycleTitle}}">
+                <img src="images/crops/corn/corn1.jpg" alt="">
+                <img src="images/crops/corn/corn2.jpg" alt="">
+                <img src="images/crops/corn/corn3.jpg" alt="">
+                <img src="images/crops/corn/corn4.jpg" alt="">
+                <img src="images/crops/corn/corn5.jpg" alt="">
+            </div>
+            <div>
+                <h1>We've got an <em>ear</em> for corn!</h1>
+                <p>Only our most perfect corn specimen are sold at the market. We look to see if the
+                    husk is bright green and tight around the kernels, if the tensel hairs are brown and sticky.
+                    Any corn that don't meet those two standards are recycled and used as compost for next year's
+                    harvest! </p>
+            </div>
+        </section>
+        <section class="crops" id="potatoes" id="slideShow">
+            <div>
+                <h1>Potatoes can power the future!</h1>
+                <p>Whether it's feeding your body the carbohydrates it needs to provide you engery, or if
+                    some reasonable scientist realizes their true potential for alternative energy and
+                    makes the worlds largest potato battery. You can count on Bear Farms Potatoes for the
+                    highest quality potatoes!</thead>
+                </p>
+            </div>
+            <div class="cycle-slideshow" data-cycle-fx="fadeout" data-cycle-timeout="5000" data-cycle-speed="2000"
+                data-cycle-caption="#adv-custom-caption" data-cycle-caption-template="{{cycleTitle}}">
+                <img src="images/crops/Potatoes/potato1.jpg" alt="">
+                <img src="images/crops/Potatoes/potato2.jpg" alt="">
+                <img src="images/crops/Potatoes/potato3.jpg" alt="">
+                <img src="images/crops/Potatoes/potato4.jpg" alt="">
+                <img src="images/crops/Potatoes/potato5.jpg" alt="">
+                <img src="images/crops/Potatoes/potato6.jpg" alt="">
+            </div>
+        </section>
+        <section class="crops" id="carrots" id="slideShow">
+            <div class="cycle-slideshow" data-cycle-fx="fadeout" data-cycle-timeout="5000" data-cycle-speed="2000"
+                data-cycle-caption="#adv-custom-caption" data-cycle-caption-template="{{cycleTitle}}">
+                <img src="images/crops/carrot/carrot1.jpg" alt="">
+                <img src="images/crops/carrot/carrot2.jpg" alt="">
+                <img src="images/crops/carrot/carrot3.jpg" alt="">
+                <img src="images/crops/carrot/carrot4.jpg" alt="">
+                <img src="images/crops/carrot/carrot5.jpg" alt="">
+            </div>
+            <div>
+                <h1>Our carrots are perfect for your snowman!</h1>
+                <p>Around 1940 there was Allied propaganda spreading stating that their pilots were able to see
+                    and shoot down german planes due to the pilots consuming an excess of, Carrots! While Vitamin
+                    A does help your eye sight, once your body has used all that it needs the remainder gets stored as
+                    fat.
+                    In reality the pilots were using their secret radar technology! Regardless, our carrots are top of
+                    the
+                    line in quality and taste!
+                </p>
+            </div>
+        </section>
+        <section class="crops" id="tomato" id="slideShow">
+            <div>
+                <h1>"I want 'em real thick and juicy" <br> -Sir Mix-a-Lot</h1>
+                <p>We only provide the best tomatoes! We don't let them leave the farm unless
+                    they are a nice deep red, firm and have absolutely <em><b>no</b></em> scarring.
+                </p>
+            </div>
+            <div class="cycle-slideshow" data-cycle-fx="fadeout" data-cycle-timeout="5000" data-cycle-speed="2000"
+                data-cycle-caption="#adv-custom-caption" data-cycle-caption-template="{{cycleTitle}}">
+                <img src="images/crops/tomatoes/tomato1.jpg" alt="">
+                <img src="images/crops/tomatoes/tomato2.jpg" alt="">
+                <img src="images/crops/tomatoes/tomato3.jpg" alt="">
+                <img src="images/crops/tomatoes/tomato4.jpg" alt="">
+                <img src="images/crops/tomatoes/tomato5.jpg" alt="">
+            </div>
+        </section>
     </main>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="../Bear Farms/BFjs/date.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery.cycle2.min.js"></script>
     <footer>
-        <div>
-            <div>
-                <div>Copyright &copy; Bear Farms 2022</div>
-                <div>
-                    <p><a href="mailto:blahblah@blah.com">bearfarms@gmail.com</a><br/>
-                       <a href="tel:+12345678910">1-234-567-8910</a></p>
-                </div>
-                <div>
-                    <a href="#!">Privacy Policy</a>
-                    <a href="#!">Terms of Use</a>
-                </div>
-            </div>
+        <div class="foot">Copyright &copy; Bear Farms 2022</div>
+        <div class="foot">
+            <a href="mailto:blahblah@blah.com">bearfarms@gmail.com</a><br>
+            <a href="tel:+12345678910">1-234-567-8910</a>
+        </div>
+        <div class="foot">
+            <a href="#!">Privacy Policy</a><br>
+            <a href="#!">Terms of Use</a>
         </div>
     </footer>
 </body>

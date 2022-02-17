@@ -17,7 +17,7 @@
     <title>Bear Farms: Vineyard</title>
     <link rel="icon" type="image/x-icon" href="../Bear Farms/images/farmdesign.png">
     <link rel="stylesheet" href="../Bear Farms/css/bearFarms.css">
-    <link rel="stylesheet" href="../Bear Farms/css/venue.css">
+    <link rel="stylesheet" href="../Bear Farms/css/vineyard.css">
 </head>
 
 <body>
@@ -25,47 +25,58 @@
         <img id="logo" src="../Bear Farms/images/bblogodesign.png" alt="Bear Farms Logo">
         <nav>
             <ul class="nav">
-                <li class="nav"><a href="..//Bear Farms/home.html" target="_blank">Home</a></li>
-                <li class="nav"><a href="..//Bear Farms/vineyard.html" target="_blank">Vineyard</a></li>
-                <li class="nav"><a href="..//Bear Farms/crops.html" target="_blank">Crops</a></li>
-                <li class="nav"><a href="..//Bear Farms/venue.html" target="_blank">Venue</a></li>
-                <li class="nav"><a href="..//Bear Farms/faq.html" target="_blank">FAQS</a></li>
-                <li class="nav"><a href="..//Bear Farms/contact.html" target="_blank">Contact</a></li>
+                <li class="nav"><a href="..//Bear Farms/home.html" >Home</a></li>
+                <li class="nav"><a href="..//Bear Farms/vineyard.html" >Vineyard</a></li>
+                <li class="nav"><a href="..//Bear Farms/crops.html" >Crops</a></li>
+                <li class="nav"><a href="..//Bear Farms/venue.html" >Venue</a></li>
+                <li class="nav"><a href="..//Bear Farms/faq.html" >FAQS</a></li>
+                <li class="nav"><a href="..//Bear Farms/contact.html" >Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
+    <main class="vineyard_main">
+        <section class="vines" id="slideShow">
             <h1>The Vineyard Guardians</h1>
-            <p>These brave, aggresive chickens eat all bugs that could harm our precious grapes.</p>
+            <p>These brave, aggresive chickens eat all bugs that could harm our precious grapes. 
+                Of course our chickens roam around to ensure that <em>every</em> plant is protected. 
+                We clean up after them daily and make sure they have plenty of bathing dust!
+            </p>
             <div class="cycle-slideshow"
                 data-cycle-fx="fadeout"
                 data-cycle-timeout="2000"
-                data-cycle-speed="1000"
-                data-cycle-caption="#adv-custom-caption"
-                data-cycle-caption-template="{{cycleTitle}}" >
-                <img src="images\farm_pictures\Chicken1.jpg" alt="" data-cycle-title="Wild pack">
-                <img src="images\farm_pictures\Chicken2.jpg" alt="" data-cycle-title="Defenders of grapes">
-                <!-- empty element for caption -->
-                <div id="adv-custom-caption"></div>
+                data-cycle-speed="1000">
+                <img src="images\farm_pictures\Chicken1.jpg" alt="">
+                <img src="images\farm_pictures\Chicken2.jpg" alt="">
+            </div>      
+        </section>
+        <section class="vines" id="slideShow">
+            <h1>The beginnings of our vineyard!</h1>
+            <p>This is a start-up proccess right now. we project to have our vineyard complete and selling 
+                delcious wine by the end of 2024! We will continue to update this page as we make progress.
+             </p>
+            <div class="cycle-slideshow"
+                data-cycle-fx="fadeout"
+                data-cycle-timeout="2000"
+                data-cycle-speed="1000">
+                <img src="../Bear Farms/images/vineyard/grape-2911039_1920.jpg" alt="">
+                <img src="../Bear Farms/images/vineyard/grapes-553464_1920.jpg" alt="">
+                <img src="../Bear Farms/images/vineyard/vineyard-428041_1920.jpg" alt="">
+                <img src="../Bear Farms/images/vineyard/vineyard-6399505_1920.jpg" alt="">
+                <img src="../Bear Farms/images/vineyard/wine-5461706_1920.jpg" alt="">
             </div>      
         </section>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="js/jquery.cycle2.min.js"></script>
     </main>
     <footer>
-        <div>
-            <div>
-                <div>Copyright &copy; Bear Farms 2022</div>
-                <div>
-                    <p><a href="mailto:blahblah@blah.com">bearfarms@gmail.com</a><br/>
-                       <a href="tel:+12345678910">1-234-567-8910</a></p>
-                </div>
-                <div>
-                    <a href="#!">Privacy Policy</a>
-                    <a href="#!">Terms of Use</a>
-                </div>
-            </div>
+        <div class="foot">Copyright &copy; Bear Farms 2022</div>
+        <div class="foot">
+            <a href="mailto:blahblah@blah.com">bearfarms@gmail.com</a><br>
+            <a href="tel:+12345678910">1-234-567-8910</a>
+        </div>
+        <div class="foot">
+            <a href="#!">Privacy Policy</a><br>
+            <a href="#!">Terms of Use</a>
         </div>
     </footer>
 </body>

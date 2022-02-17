@@ -22,52 +22,72 @@
 </head>
 
 <body>
-    
+
     <header>
         <img id="logo" src="../Bear Farms/images/bblogodesign.png" alt="Bear Farms Logo">
-        <nav>
-            <ul>
-                <li><a href="..//Bear Farms/home.html" target="_blank">Home</a></li>
-                <li><a href="..//Bear Farms/vineyard.html" target="_blank">Vineyard</a></li>
-                <li><a href="..//Bear Farms/crops.html" target="_blank">Crops</a></li>
-                <li><a href="..//Bear Farms/venue.html" target="_blank">Venue</a></li>
-                <li><a href="..//Bear Farms/faq.html" target="_blank">FAQS</a></li>
-                <li><a href="..//Bear Farms/contact.html" target="_blank">Contact</a></li>
+        <nav class="sticky">
+            <ul class="nav">
+                <li class="nav"><a href="..//Bear Farms/home.html" >Home</a></li>
+                <li class="nav"><a href="..//Bear Farms/vineyard.html" >Vineyard</a></li>
+                <li class="nav"><a href="..//Bear Farms/crops.html" >Crops</a></li>
+                <li class="nav"><a href="..//Bear Farms/venue.html" >Venue</a></li>
+                <li class="nav"><a href="..//Bear Farms/faq.html" >FAQS</a></li>
+                <li class="nav"><a href="..//Bear Farms/contact.html" >Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <div >
+    <main class="home_main">
+        <section class="home_section" id="welcome">
             <h1>Welcome to our online farm!</h1>
-            <p>We have been serving our community in the Western half of the United States for over 3 generations! We have three main attractions: Our massive Vineyard, Our Venue, and most importantly 600+ Acre farm!!</p>
-        </div>
-        <div>
+            <p>We have been serving our community in the Western half 
+                of the United States for over 3 generations! We
+                have three main attractions: our massive Vineyard,
+                our Venue and most importantly our 420 Acre farm!!</p>
+        </section>
+        <section class="home_section" id="content">
+            <h1>We are a local, family owned and operated farm in the neighboring valley.</h1>
+            <p>Here on the farm we grow our top rated corn, potatoes, carrots and tomatoes! 
+                We've recently partitioned a small portion of our farm to start a vineyard. 
+                We've also spent the past 3 years hosting venues for weddings and large events!
+                We are a fourth generation farm, so now its all profit! Back in the ol' days 
+                we used to run 'shine to the ol' speekeasies! Since then we have gone clean to 
+                run a 100% legit farm! It aint much, but its honest work.
+            </p>
+        </section>
+        <section class="home_section" id="farm">
+            <h1>Here are some overview images of our farm</h1>
+            <div id="home_imgs">
+                <img src="../Bear Farms/images/home/barn.jpg" alt="">
+                <img src="../Bear Farms/images/home/barn2.jpg" alt="">
+                <img src="../Bear Farms/images/home/carrot.jpg" alt="">
+                <img src="../Bear Farms/images/home/corn.jpg" alt="">
+                <img src="../Bear Farms/images/home/potato.jpg" alt="">
+                <img src="../Bear Farms/images/home/potato2.jpg" alt="">
+            </div>
+        </section>
+        <section class="home_section" id="news">
             <h2>Join our Newsletter!</h2>
             <form id="email_form" name="email_form" method="get">
                 <div>
                     <label for="news_email">Email Address:</label>
                     <input type="text" id="news_email" name="news_email">
+                    <span>*</span><br>
                     <input type="button" id="join_news" value="Join Newsletter">
-                    <span></span>
                 </div>
             </form>
-        </div>
+        </section>
     </main>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="../Bear Farms/BFjs/newsletter.js"></script>
     <footer>
-        <div>
-            <div>
-                <div>Copyright &copy; Bear Farms 2022</div>
-                <div>
-                    <p><a href="mailto:blahblah@blah.com">bearfarms@gmail.com</a><br/>
-                       <a href="tel:+12345678910">1-234-567-8910</a></p>
-                </div>
-                <div>
-                    <a href="#!">Privacy Policy</a>
-                    <a href="#!">Terms of Use</a>
-                </div>
-            </div>
+        <div class="foot">Copyright &copy; Bear Farms 2022</div>
+        <div class="foot">
+            <a href="mailto:blahblah@blah.com">bearfarms@gmail.com</a><br>
+            <a href="tel:+12345678910">1-234-567-8910</a>
+        </div>
+        <div class="foot">
+            <a href="#!">Privacy Policy</a><br>
+            <a href="#!">Terms of Use</a>
         </div>
     </footer>
 </body>

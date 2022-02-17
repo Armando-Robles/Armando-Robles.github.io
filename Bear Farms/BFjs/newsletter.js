@@ -14,7 +14,6 @@
 $(document).ready(() => {
 
     $("#join_news").click(() => {
-        $("span").text("");   // clear any previous error messages
 
         // get values entered by user
         const email = $("#news_email").val();
@@ -31,13 +30,10 @@ $(document).ready(() => {
         }
 
 
-        if (isValid) {
-            // code that saves profile info goes here
+        if (isValid == true) {
+            alert("Thank you for signing up for our newsletter!");
         }
 
-        $("#news_email").focus();
     });
 
-    // set focus on initial load
-    $("#news_email").focus();
 });
