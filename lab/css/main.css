@@ -1,0 +1,259 @@
+/* Tablet and Computer CSS */
+@media (min-width: 621px) {
+    #logo {
+     width: 45em;
+     height: 25em;
+    }
+    #windowFarm {
+     width: 60%;
+    }
+    }
+    
+    /* Mobile CSS */
+    @media (max-width: 620px) {
+    #logo {
+    width: 100%;
+    }
+    #windowFarm {
+    width: 100%;
+    }
+    }
+    
+    body {
+        background-color: rgba(122, 67, 35, 0.13);
+        font-size: 1.5em;
+    }
+    header, main {
+        text-align: center;
+        align-items: center;
+    }
+    ul {
+      padding-left: 45px;
+    }
+    /* Navbar css */
+    ul.nav {
+      list-style-type: none;
+      margin: 0 0 0 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: rgba(122, 67, 35, 0.877);
+    }
+          
+    li.nav {
+      float: left;
+    }
+          
+    li.nav a {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 1.75em;
+      font-weight: bold;
+    }
+          
+    li.nav a:hover {
+      background-color: rgba(17, 17, 17, 0.315);
+    }
+      
+    li a:hover {
+      background-color: rgba(17, 17, 17, 0.315);
+    }
+    
+    footer {
+      display: grid;
+      grid-column-gap: 25px;
+      grid-template-columns: auto auto auto;
+      background-color: rgba(122, 67, 35, 0.877);
+      width:100%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    
+    
+    .button {
+      position: relative;
+      margin-left: 31em;
+      background-color: rgba(122, 67, 35, 0.877);
+      border: none;
+      font-size: 28px;
+      color: black;
+      padding: 20px;
+      width: 200px;
+      text-align: center;
+      transition-duration: 0.4s;
+      text-decoration: none;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    
+    ul #image_list { 
+      display: none; 
+    }
+    
+    main div {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+    a:active {
+      color: black;
+    }
+    
+    .foot {
+      font-size: 1em;
+      text-align: center;
+    }
+    
+    .sticky {
+      position: sticky;
+    }
+    
+    .landing {
+      background-color: rgba(122, 67, 35, 0.877);
+      align-content: center;
+      display: flex;
+    }
+    h1 { 
+      font-size: 150%;
+      margin-bottom: .5em;
+      text-align: center;
+    }
+    input {
+        width: 50em;
+        margin-bottom: .5em;
+    }
+    /*                                                  HOME PAGE  */
+    .home_main {
+      display: grid;
+      grid-column-gap: 5px;
+      grid-template-columns: 30em auto auto;
+      grid-auto-rows: auto auto auto;
+    }
+    .home_section{
+      background-color: rgba(128, 128, 128, 0.527);
+      font-family: Arial, Helvetica, sans-serif;
+        /* width: 25em; */
+        margin: 0 auto;
+      padding: 20px 0 20px 0;
+      border: 3px solid black;
+      margin-bottom: 1em;
+      margin-top: 1em;
+    }
+    #welcome{
+      grid-column: 1;
+      grid-row: 1;
+    }
+    #content {
+      grid-column: 2/3;
+      grid-row: 1;
+    }
+    #news{
+      grid-column: 1/3;
+      grid-row: 3;
+      width: 50em;
+    }
+    #news label {
+      text-align: left;
+    }
+    #farm{
+    grid-column: 1/3;
+    grid-row: 2;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    }
+    #home_imgs{
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto auto auto;
+    }
+    #home_imgs img {
+      width: 20em;
+      margin: 0 15px 15px 15px;
+      border: 3px solid black;
+    }
+    /*                                               INVENTORY PAGE */
+    .vehicles {
+      display: grid;
+      grid-column-gap: 15px;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto;
+      margin: 2em 0 2em 0;
+      border: 3px solid black;
+    }
+    .vehicles div {
+      font-family: Arial, Helvetica, sans-serif;
+        width: 650px;
+        margin: 0 auto 0 auto;
+      margin-bottom: 2em;
+      margin-top: 2em;
+    }
+    .vehicles div img {
+      margin: 0 auto 0 auto;
+        width: 600px;
+    }
+    #first {
+      background-color: rgba(122, 67, 35, 0.2);
+    }
+    #second{
+      background-color: rgba(122, 67, 35, 0.3);
+    }
+    #third{
+      background-color: rgba(122, 67, 35, 0.4);
+    }
+    #fourth{
+      background-color: rgba(122, 67, 35, 0.5);
+    }
+    /*                                                         CONTACT */
+    .contact {
+      background-color: rgba(128, 128, 128, 0.527);
+      font-family: Arial, Helvetica, sans-serif;
+        width: 1000px;
+        margin: 0 auto;
+      padding: 20px;
+      border: 3px solid black;
+      margin-bottom: 1em;
+      margin-top: 1em;
+    }
+    .contact label {
+      display: inline-block;
+      width: 11em;
+      text-align: right;
+    }
+    .contact input {
+      width: 20em;
+      height: 1.5em;
+      margin-bottom: .5em;
+      margin-left: 1em;
+      margin-right: 0.5em;
+      
+    }
+    .contact span {
+      color: red;
+    }
+    .float_left {
+      float: left;
+    }
+    #landing_head {
+        font-size: 5em;
+    }
+    #landing_main {
+        background-image: url(../images/mountains-55067.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #landing_foot {
+        background-color: rgba(240, 248, 255, 0);
+    }
+    .taco {
+        height: 5em;
+        width: 7.5em;
+        position: absolute;
+        top: 360px;
+        left: 0px;
+        animation: drive 4s both infinite linear
+      }
+      @keyframes drive {
+        from{ transform: translateX(-100px);}
+        to{ transform: translateX(1300px);}
+      }
